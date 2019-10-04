@@ -3,6 +3,10 @@ from logpy import run,fact,eq,Relation,var
 file_coastal = 'coastal_states.txt'
 file_adjacent ='adjacent_states.txt'
 
+# initialise the varieables for the Realtion between data
+coastal = Relation()
+adjacent = Relation()
+
 # read the file containing the coastal states
 with open(file_coastal, 'r') as f:
     line = f.read()
